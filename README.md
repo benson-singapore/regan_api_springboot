@@ -9,7 +9,7 @@ Regan_API_SpringBoot 文档项目
 
 ![](http://file.homeins.cn/FrIAtiOVuYau1WLQ33M3w4Sqj4q5)
 
-#### 文档： _文档后续更新_ 
+#### 文档： [https://zhangbiy.github.io/regan_api_doc/](https://zhangbiy.github.io/regan_api_doc/)
 
 #### 版本
   - Jfinal:[https://github.com/zhangbiy/jfinal-api](https://github.com/zhangbiy/jfinal-api)
