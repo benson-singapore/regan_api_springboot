@@ -1,4 +1,4 @@
-# Regan_API_SpringBoot
+# Regan_API
 
 #### 项目介绍
 Regan_API_SpringBoot 文档项目
@@ -10,6 +10,10 @@ Regan_API_SpringBoot 文档项目
 ![](http://file.homeins.cn/FrIAtiOVuYau1WLQ33M3w4Sqj4q5)
 
 #### 文档： _文档后续更新_ 
+
+#### 版本
+  Jfinal:https://github.com/zhangbiy/jfinal-api
+  springboot:https://github.com/zhangbiy/regan_api
 
 #### 软件架构
 软件架构说明
