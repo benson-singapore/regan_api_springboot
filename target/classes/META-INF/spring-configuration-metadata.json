@@ -1,0 +1,28 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "regan.api.jboot.conf.api.entity.ApiConfig",
+      "name": "api",
+      "type": "regan.api.jboot.conf.api.entity.ApiConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "regan.api.jboot.conf.api.entity.ApiConfig",
+      "name": "api.filters",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "regan.api.jboot.conf.api.entity.ApiConfig",
+      "name": "api.packages",
+      "description": "指定需要的过滤Controller",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "regan.api.jboot.conf.api.entity.ApiConfig",
+      "name": "api.theme",
+      "type": "java.lang.String"
+    }
+  ]
+}

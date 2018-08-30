@@ -1,0 +1,28 @@
+
+regan:
+    version: 1.00
+
+# api配置信息
+api:
+  #解析的controller包 多个用逗号间隔
+  packages:
+    - com.regan.api.jboot.controller
+  #需要过滤的controller 多个用逗号间隔
+  filters:
+  #主题色，黑：dark、白：light
+  theme: dark
+
+#端口
+server:
+  port: 8080
+
+#spring 配置信息
+spring:
+  #指定模板
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+  mvc:
+    static-path-pattern: /static/**
