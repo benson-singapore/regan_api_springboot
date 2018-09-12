@@ -193,7 +193,7 @@ public class AnnotationParse {
         packages.forEach(pk->{
             File[] files = FileUtil.ls(SRC_PAth + pk.replace(".", "/"));
             //数据过滤
-            Stream.of(files).filter(f->!filters.contains(getLowName4EndWithJava(f.getName()))).filter(pre)
+            Stream.of(files).filter(f->!filters.contains(getLowName4EndWithJava(f.getName())) && new File(f.getPath()).isFile()).filter(pre)
                     .forEach(f-> {
                         //调用解析方法
                         ClassDoc[] data = JavaDocReader.show(f.getPath());
