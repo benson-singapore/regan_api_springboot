@@ -312,7 +312,7 @@ public class ApiController{
                 );
             });
         } else {
-            List<String> param = Convert.convert(List.class, dataMap.get("resqParam"));
+            List<String> param = Convert.convert(List.class, dataMap.get("resqParam") instanceof String ? Lists.newArrayList(dataMap.get("resqParam")) : dataMap.get("resqParam"));
             json = parseApiTableJson(param, (l, p) -> {
                 List<String> splitStr4Temp = CommUtil.splitStr4Temp(p, "{}|");
                 List<String> keys = CommUtil.splitStr(splitStr4Temp.get(0), ".");
