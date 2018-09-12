@@ -88,10 +88,10 @@ public class AnnotationParse {
         //过滤controller，统一转成小写
         if (Objects.isNull(annotationParse)) {
             annotationParse = new AnnotationParse();
-            annotationParse.filters = Lists.newArrayList(filter).stream().map(f->f.toLowerCase()).collect(Collectors.toList());
+            annotationParse.filters = Lists.newArrayList(filter).stream().map(f->f.toLowerCase().trim()).collect(Collectors.toList());
             return annotationParse;
         } else {
-            annotationParse.filters = Lists.newArrayList(filter).stream().map(f->f.toLowerCase()).collect(Collectors.toList());;
+            annotationParse.filters = Lists.newArrayList(filter).stream().map(f->f.toLowerCase().trim()).collect(Collectors.toList());;
         }
         return annotationParse;
     }
