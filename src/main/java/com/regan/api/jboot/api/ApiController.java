@@ -426,7 +426,16 @@ public class ApiController{
                 list.add(Convert.convert(Dict.class, okv.get(p)));
             }
         });
-        return JSON.toJSONString(list);
+        List<Dict> yuanList = Lists.newArrayList();
+        //还原序列
+        paramList.stream().map(p -> p.split("\\|")[0]).forEach(str->{
+            list.forEach(li ->{
+                if (str.equals(li.getStr("name"))) {
+                    yuanList.add(li);
+                }
+            });
+        });
+        return JSON.toJSONString(yuanList);
     }
 
     private static Dict getLastKv(List<Dict> list, List<String> keys) {
