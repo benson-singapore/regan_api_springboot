@@ -38,7 +38,10 @@ public class AnnotationParse {
     static {
         try {
             SRC_PAth = (ResourceUtils.getURL("classpath:").getPath().contains("/target/classes")?
-                    CommUtil.splitStr4Temp(ResourceUtils.getURL("classpath:").getPath(),"{}/target/classes").get(0): ResourceUtils.getURL("classpath:").getPath()) + "/src/main/java/";
+                    CommUtil.splitStr4Temp(ResourceUtils.getURL("classpath:").getPath(),"{}/target/classes").get(0):
+                        ResourceUtils.getURL("classpath:").getPath().contains("\\target\\classes")?
+                        CommUtil.splitStr4Temp(ResourceUtils.getURL("classpath:").getPath(),"{}\\target\\classes").get(0):
+                        ResourceUtils.getURL("classpath:").getPath()) + "/src/main/java/";
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
